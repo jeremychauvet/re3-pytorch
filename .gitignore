@@ -11,3 +11,5 @@ labels/
 *.pt
 *.pkl
 .idea
+
+assets/*
