@@ -1,18 +1,11 @@
 import glob
 import os.path
 import sys
-
 import cv2
 
 basedir = os.path.dirname(__file__)
 sys.path.append(os.path.abspath(os.path.join(basedir, os.path.pardir)))
 from tracker import re3_tracker
-
-if not os.path.exists(os.path.join(basedir, "data")):
-    import tarfile
-
-    tar = tarfile.open(os.path.join(basedir, "data.tar.gz"))
-    tar.extractall(path=basedir)
 
 cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
 cv2.resizeWindow("Image", 640, 480)

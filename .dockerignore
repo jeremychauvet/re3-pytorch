@@ -1,0 +1,7 @@
+.git
+.editorconfig
+LICENCE
+*.md
+Makefile
+Dockerfile
+tools/*
